@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse - Cadastro</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <img src="img/logo.jpg" alt="Logo do CineVerse">
+            </a>
+
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+
+                <li><a href="filmes.html">Filmes</a></li>
+
+                <li><a href="series.html">Séries</a></li>
+
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="secao">
+            
+            <div class="titulo-secao">
+
+                <span>CADASTRO</span>
+
+                <h1>Adicione um título ao CineVerse</h1>
+
+                <p>Cadastre um filme ou uma série para adicionarao catálogo.</p>
+
+            </div>
+
+            <form class="formulario" action="pages/salvar.php" method="post">
+                <div class="campo">
+                    <label for="titulo">Título</label>
+                    <input
+                        type="text"
+                        id="titulo"
+                        name="titulo"
+                        placeholder="Digite o título"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="tipo">Tipo</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecione</option>
+                        <option value="Filme">Filme</option>
+                        <option value="Série">Série</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="genero">Gênero</label>
+                    <input
+                        type="text"
+                        id="genero"
+                        name="genero"
+                        placeholder="Ex.: Ação, Drama, Comédia"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="ano">Ano</label>
+                    <input
+                        type="number"
+                        id="ano"
+                        name="ano"
+                        placeholder="Ex.: 2026"
+                        required>
+                </div>
+
+                <button type="submit" class="botao">Cadastrar título</button>
+
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+
+        <div class="footer-conteudo">
+
+            <div class="footer-coluna">
+
+                <a href="index.html" class="logo-footer">
+                    <img src="img/logo.jpg" alt="Logo do CineVerse"></a>
+
+                <p>Filmes, séries e histórias para descobrir.</p>
+            </div>
+            
+            <div class="footer-coluna">
+                <h3>Navegação</h3>
+
+                <a href="index.html">Início</a>
+
+                <a href="filmes.html">Filmes</a>
+
+                <a href="series.html">Séries</a>
+
+                <a href="cadastro.html">Cadastro</a>
+            </div>
+            
+            <div class="footer-coluna">
+
+                <h3>CineVerse</h3>
+
+                <p>Catálogo digital de filmes e séries.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
